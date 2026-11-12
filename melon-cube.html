@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MelonMC Würfel</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="melon-cube.css">
+<style>
+  /* Nur zum Einzelansehen: Hintergrund und Mitte. Der Würfel selbst steht in melon-cube.css. */
+  html,body{height:100%;margin:0}
+  body{display:grid;place-items:center;background:radial-gradient(ellipse at 50% 40%,#2f9bff,#0a2a6b)}
+  .stage{width:560px;max-width:100vw}
+</style>
+</head>
+<body>
+<!-- Das Logo: ein drehender Melonenwürfel. In eine Seite einbauen mit
+     <link rel="stylesheet" href="melon-cube.css"> und diesem Block. -->
+<div class="stage" aria-hidden="true">
+  <div class="cube"><i class="f"></i><i class="b"></i><i class="r"></i><i class="l"></i><i class="t"></i><i class="d"></i></div>
+</div>
+</body>
+</html>

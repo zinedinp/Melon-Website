@@ -1,0 +1,17 @@
+/* Melonen-Voxelwuerfel in 3D */
+.stage{position:relative;height:560px;perspective:1400px;z-index:3}
+.cube{--s:280px;position:absolute;left:50%;top:50%;width:var(--s);height:var(--s);margin:-140px 0 0 -140px;transform-style:preserve-3d;transform:rotateX(-22deg) rotateY(30deg);animation:spin 22s linear infinite;filter:drop-shadow(0 40px 30px rgba(10,42,107,.45))}
+@keyframes spin{to{transform:rotateX(-22deg) rotateY(390deg)}}
+.cube i{position:absolute;inset:0;backface-visibility:hidden;border:4px solid #0a4a1c;
+  background:repeating-linear-gradient(90deg,#27b358 0 28px,#17843c 28px 56px,#3fd172 56px 84px,#17843c 84px 112px)}
+.cube .f{transform:translateZ(140px)}.cube .b{transform:rotateY(180deg) translateZ(140px)}
+.cube .r{transform:rotateY(90deg) translateZ(140px)}.cube .l{transform:rotateY(-90deg) translateZ(140px)}
+.cube .t{transform:rotateX(90deg) translateZ(140px);background:repeating-linear-gradient(90deg,#6be88d 0 28px,#38c566 28px 56px)}
+.cube .d{transform:rotateX(-90deg) translateZ(140px);background:#0e5a28}
+.cube .f{ /* aufgeschnittene Seite: Rinde, Fruchtfleisch, Kerne */
+  background:
+   linear-gradient(#111,#111) 72px 80px/16px 16px no-repeat,linear-gradient(#111,#111) 160px 72px/16px 16px no-repeat,
+   linear-gradient(#111,#111) 112px 136px/16px 16px no-repeat,linear-gradient(#111,#111) 192px 152px/16px 16px no-repeat,
+   linear-gradient(#111,#111) 64px 184px/16px 16px no-repeat,linear-gradient(#111,#111) 144px 200px/16px 16px no-repeat,
+   linear-gradient(#ff7a90,#ff2a4a);
+  box-shadow:inset 0 0 0 12px #27b358,inset 0 0 0 24px #e9ffd0}
