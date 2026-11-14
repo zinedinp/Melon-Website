@@ -213,6 +213,8 @@ body.metro{background:#07204f;background-image:radial-gradient(ellipse 60% 40% a
 .tile .g{position:absolute;right:16px;top:8px;font-weight:950;font-size:128px;line-height:1;opacity:.28}
 .tile h2{position:relative;font-weight:900;font-size:32px;line-height:1.05;text-transform:uppercase;margin-bottom:8px}
 .tile p{position:relative;font-weight:300;font-size:18px;line-height:1.4}
+.tile p+p{margin-top:8px}
+.tile code{display:inline-block;font:500 15px ui-monospace,monospace;background:rgba(0,0,0,.3);padding:2px 6px;border-radius:4px;margin:2px 0;word-break:break-all}
 .tile.cta{align-items:flex-start;justify-content:center;gap:16px;background:#5fd13a}
 .tile.cta h2{font-size:36px}
 .tile.cta.w2 h2{font-size:40px}
@@ -238,6 +240,9 @@ body.metro{background:#07204f;background-image:radial-gradient(ellipse 60% 40% a
 .list.todo li{--c:#e8940a}.list.todo li::before{content:"◌"}
 .list li.soon{--c:#1ba1e2}.list li.soon::before{content:"◔"}
 .list h3{font-weight:900;font-size:22px;text-transform:uppercase}
+.list p.usp{margin-top:10px;font-weight:600;color:#fff}
+.list p.usp b{color:var(--hl1);text-transform:uppercase;letter-spacing:.04em;font-size:15px;font-weight:900}
+.list p.usp b::before{content:"★ "}
 .list p{font-weight:300;font-size:18px;line-height:1.4;color:#d9ecff}
 
 /* Links im Fliesstext (z.B. Pumpkin) */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-i18n="install.title"></title>
+<meta content="" data-i18n-content="install.desc" name="description"/>
+<link href="logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<script defer src="site.js"></script>
+<script defer src="text/de.js"></script>
+<script defer src="text/en.js"></script>
+<script defer src="i18n.js"></script>
+</head>
+<body class="metro">
+<nav class="nav">
+<a class="brand" href="index.html"><img alt="" src="logo.svg"/><span data-i18n="common.melonmc"></span></a>
+<button aria-expanded="false" class="menu" data-i18n-aria="common.menu" type="button"><i></i></button>
+<ul><li><a data-i18n="common.home" href="index.html"></a></li><li><a aria-current="page" data-i18n="common.installation" href="install.html"></a></li><li><a data-i18n="common.features" href="features.html"></a></li><li><a data-i18n="common.play" href="play.html"></a></li></ul>
+<div aria-label="Language" class="lang" role="group"></div>
+<a class="btn sm" href="install.html"><span class="tri"></span><span data-i18n="common.download"></span></a>
+</nav>
+<main>
+<h1><span data-i18n="common.installation"></span><small data-i18n="install.from-download"></small></h1>
+<p class="sub" data-i18n="install.sub"></p>
+<div class="tiles">
+<a class="tile cta w2" data-site="launcherUrl" download="melon-launcher" href="https://elbengeist.moe/melonmc/cdn/launcher/0.1.1/linux-x86-64/melon-launcher"><h2 data-i18n="install.dl-title"></h2><p data-i18n="install.dl-text"></p><span class="btn sm"><span class="tri"></span><span data-i18n="install.dl-button"></span></span></a>
+<div class="tile t-blue"><span class="g">#</span><h2 data-i18n="install.check-title"></h2><p><span data-i18n="install.check-text"></span> <a data-i18n="install.check-link" data-site="launcherSha" href="https://elbengeist.moe/melonmc/cdn/launcher/0.1.1/linux-x86-64/melon-launcher.sha256"></a></p><p><code>sha256sum -c melon-launcher.sha256</code></p></div>
+<div class="tile t-violet"><span class="g">▶</span><h2 data-i18n="install.start-title"></h2><p data-i18n="install.start-text"></p><p><code>chmod +x melon-launcher</code> <code>./melon-launcher</code></p></div>
+<div class="tile w2 t-green"><span class="g">4</span><h2 data-i18n="install.play-title"></h2><p data-i18n="install.play-text"></p></div>
+<div class="tile w2 t-red"><span class="g">MC</span><h2 data-i18n="play.minecraft-required"></h2><p data-i18n="play.your-own-copy-of"></p></div>
+<div class="tile w2 t-teal"><span class="g">⚙</span><h2 data-i18n="install.platform-title"></h2><p data-i18n="install.platform-text"></p></div>
+<a class="tile w2 t-navy" href="play.html"><span class="g">{}</span><h2 data-i18n="install.build-sec"></h2><p data-i18n="install.build-sub"></p></a>
+</div>
+<h2 class="sec" id="selbst-bauen"><span data-i18n="install.build-sec"></span><small data-i18n="install.build-sub"></small></h2>
+<p class="sub" data-i18n="install.build-text"></p>
+<a class="btn glass" href="play.html"><span class="tri"></span><span data-i18n="install.build-button"></span></a>
+<a class="back" data-i18n="common.back-to-home" href="index.html"></a>
+</main>
+</body>
+</html>

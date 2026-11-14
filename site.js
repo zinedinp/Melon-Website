@@ -1,8 +1,18 @@
 window.MelonSite = {
-  version: "0.7.0",
+  version: "0.8.0",
   mc: "26.3",
-  repo: "https://github.com/zinedinp/Melon",
+  launcher: "0.1.1",
+  // The launcher's platform folder on the CDN; the only one built so far.
+  platform: "linux-x86-64",
+  cdn: "https://elbengeist.moe/melonmc/cdn",
+  repo: "https://github.com/zinedinp/Melon-Client",
 };
+// Direct links to the launcher binary and its checksum.
+{
+  const site = window.MelonSite;
+  site.launcherUrl = `${site.cdn}/launcher/${site.launcher}/${site.platform}/melon-launcher`;
+  site.launcherSha = `${site.launcherUrl}.sha256`;
+}
 
 document.querySelectorAll(".nav .menu").forEach((btn) => {
   btn.addEventListener("click", () => {
