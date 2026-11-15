@@ -1,5 +1,5 @@
 window.MelonSite = {
-  version: "0.8.0",
+  version: "0.9.0",
   mc: "26.3",
   launcher: "0.1.1",
   // The launcher's platform folder on the CDN; the only one built so far.
